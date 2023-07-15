@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title> Simple Invoice </title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body dir="rtl">
+  <div id="printTable">
+    <section>
+      <div class="invoice">
+        <div class="invoice_info">
+          <div class="i_row">
+            <div class="i_logo">
+              <h1>شركة دور داش للتشطيب و الديكور</h1>
+            </div>
+            <div class="logo_img">
+              <img src="Invoice_logo.png" class="" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="invoice_table">
+          <div class="i_table">
+            <div class="i_table_head">
+              <div class="i_row">
+                <div class="i_col w_55">
+                  <p class="p_title text_right">البيـــــان </p>
+                </div>
+                <div class="i_col w_15 text_center">
+                  <p class="p_title">العــدد</p>
+                </div>
+                <div class="i_col w_15 text_center">
+                  <p class="p_title">الســعر </p>
+                </div>
+                <div class="i_col w_15 text_right">
+                  <p class="p_title">الاجمــالي</p>
+                </div>
+              </div>
+            </div>
+            <div class="i_table_body">
+              <div class="i_row">
+                <div class="i_col w_55">
+                  <p>بابا مصفح رقم 1</p>
+                  <span>باب جوانب صاج لون اسود </span>
+                </div>
+                <div class="i_col w_15 text_center">
+                  <p>3</p>
+                </div>
+                <div class="i_col w_15 text_center">
+                  <p>2500 ج </p>
+                </div>
+                <div class="i_col w_15 text_center">
+                  <p>2500 ج </p>
+                </div>
+              </div>
+              <div class="i_row">
+                <div class="i_col w_55">
+                  <p>بابا مصفح رقم 1</p>
+                  <span>باب جوانب صاج لون اسود </span>
+                </div>
+                <div class="i_col w_15 text_center">
+                  <p>3</p>
+                </div>
+                <div class="i_col w_15 text_center">
+                  <p>2500 ج </p>
+                </div>
+                <div class="i_col w_15 text_center">
+                  <p>2500 ج </p>
+                </div>
+              </div>
+              <div class="i_row">
+                <div class="i_col w_55">
+                  <p>بابا مصفح رقم 1</p>
+                  <span>باب جوانب صاج لون اسود </span>
+                </div>
+                <div class="i_col w_15 text_center">
+                  <p>3</p>
+                </div>
+                <div class="i_col w_15 text_center">
+                  <p>2500 ج </p>
+                </div>
+                <div class="i_col w_15 text_center">
+                  <p>2500 ج </p>
+                </div>
+              </div>
+            </div>
+            <div class="i_table_foot">
+              <div class="i_row">
+                <div class="i_col w_50">
+                  <p>اجمالي بالارقام </p>
+                  <br>
+
+                  <p>اجمالي بالحروف </p>
+                </div>
+                <div class="i_col w_50 text_right">
+                  <p>7500 جنية مصري </p>
+                  <br>
+                  <p>سبعة الاف وخمس مائة جنية مصري </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="i_row">
+          <div class="location">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="address">
+              <p>مدينة 6 اكتوبر - الحي الاول - المجاورة الثانية -عمارة 297</p>
+              <!-- <button id="print-invoice-btn">Print Invoice</button> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- <button id="printButton" onclick="print()">Print</button> -->
+        <button class="button-print-or-save-document btn1">Print
+          or Save Document</button>
+        <!--
+        <div class="invoice_terms">
+          <div class="main_title">
+            <p>terms and Conditions</p>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe nemo eligendi inventore? Provident iste
+            cumque quam eaque consequatur architecto, consequuntur molestiae? Corporis, voluptates? Fugit, omnis.</p>
+        </div> -->
+      </div>
+    </section>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js "></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script>
+
+
+    const buttonPrintOrSaveDocument = document.querySelector(
+      ".button-print-or-save-document"
+    )
+
+    function printOrSave() {
+      window.print()
+    }
+
+    buttonPrintOrSaveDocument.addEventListener("click", printOrSave)
+
+
+// window.jsPDF = window.jspdf.jsPDF;
+    // var docPDF = new jsPDF();
+    // function print() {
+    //   var elementHTML = document.querySelector("#printTable");
+    //   docPDF.html(elementHTML, {
+    //     callback: function (docPDF) {
+    //       docPDF.save('HTML Linuxhint web page.pdf');
+    //     },
+    //     x: 15,
+    //     y: 15,
+    //     width: 170,
+    //     windowWidth: 650
+    //   });
+    // }
+
+  </script>
+
+</body>
+
+</html>
