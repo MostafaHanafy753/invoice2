@@ -173,3 +173,21 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
+
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 800px;
+  align-items: center;
+  /* set a max-width for the parent div */
+  margin: 0 auto;
+  /* add auto margin to horizontally center the parent div */
+}
+
+.content span {
+  font-size: 20px;
+  color: var(--primary-clr);
+  font-weight: bold;
+  direction: rtl;
+}
